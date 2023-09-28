@@ -21,7 +21,7 @@ public class Ejercicio2 {
 		num = sc.nextFloat();
 		
 		//Compruebo si es divisible por 7
-		resto = num%7;
+		resto = num%7==0 ? 0 : 7-num%7;
 		
 		//Muestro cuanto hay que sumarle al número para que sea múltiplo de 7
 		System.out.println("A " + num + " hay que sumarle " + resto + " para que sea múltiplo de 7");
