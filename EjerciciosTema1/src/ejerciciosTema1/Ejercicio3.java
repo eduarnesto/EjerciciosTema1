@@ -30,7 +30,7 @@ public class Ejercicio3 {
 		num2 = sc.nextFloat();
 		
 		//Compruebo si el primer número 1 es divisible por número 2
-		resto = num1>num2 ? num2 - (num1%num2) : num2%num1;
+		resto = num1%num2==0 ? 0 : num2 - (num1%num2);
 		
 		//Muestro cuanto hay que sumarle al número 1 para que sea múltiplo del número 2
 		System.out.println("A " + num1 + " hay que sumarle " + resto + " para que sea múltiplo de " + num2);
