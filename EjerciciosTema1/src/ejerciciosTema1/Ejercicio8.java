@@ -9,7 +9,10 @@ public class Ejercicio8 {
 		final float ENTRADAS_NIÑOS = 15.50f;
 		
 		//Constante para guardar el precio de las entradas de adultos
-		final int ENTRADAS_ADULTOS = 20;
+		final float ENTRADAS_ADULTOS = 20;
+		
+		//Constate para guardar el descuento
+		final float DESCUENTO = 0.95f;
 		
 		//Variable para guardar el valor de entradas infantiles
 		int entradasNiños;
@@ -39,7 +42,7 @@ public class Ejercicio8 {
 		precio = entradasNiños*ENTRADAS_NIÑOS+entradasAdultos*ENTRADAS_ADULTOS;
 		
 		//Verifico si tienen descuento
-		precio = (float) ((precio-100)>=0 ? precio*0.95 : precio);
+		precio = precio>=100 ? precio*DESCUENTO : precio;
 		
 		//Muestro el precio de las entradas
 		System.out.println("El precio total de las entradas es: " + precio + "€");
