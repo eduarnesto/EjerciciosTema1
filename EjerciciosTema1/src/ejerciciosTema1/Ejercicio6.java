@@ -5,8 +5,11 @@ import java.util.Scanner;
 public class Ejercicio6 {
 
 	public static void main(String[] args) {
-		//Variable para guardar la cantidad de segundos
-		int segundos;
+		//Variable para guardar la cantidad de segundos iniciales
+		int segundosiniciales;
+		
+		//Variable para guardar la cantidad de segundos finales
+		int segundosfinales;
 		
 		//Variable para guardar la cantidad de minutos
 		int minutos;
@@ -17,23 +20,23 @@ public class Ejercicio6 {
 		//Scanner para leer del teclado
 		Scanner sc = new Scanner (System.in);
 		
-		//Pregunto por la cantidad de segundos
-		System.out.println("Introduzca la cantidad de segundos:");
+		//Pregunto por la cantidad de segundosiniciales
+		System.out.println("Introduzca la cantidad de segundosiniciales:");
 		
-		//Leo la cantidad de segundos
-		segundos=sc.nextInt();
+		//Leo la cantidad de segundosiniciales
+		segundosiniciales=sc.nextInt();
 		
 		//Calculo la cantidad de horas
-		horas = segundos/3600;
+		horas = segundosiniciales/3600;
 		
 		//Calculo la cantidad de minutos
-		minutos = segundos%3600/60;
+		minutos = segundosiniciales%3600/60;
 		
-		//Calculo la cantidad de segundos
-		segundos = segundos%3600%60;
+		//Calculo la cantidad de segundosiniciales
+		segundosfinales = segundosiniciales%3600%60;
 		
-		//Muestro el número de horas, minutos y segundos
-		System.out.println("Hay " + horas + " horas, " + minutos + " minutos, " + segundos + " segundos.");
+		//Muestro el número de horas, minutos y segundosiniciales
+		System.out.println("Hay " + horas + " horas, " + minutos + " minutos, " + segundosfinales + " segundos.");
 		
 		//Cierro el scanner
 		sc.close();
