@@ -6,13 +6,13 @@ public class Ejercicio8 {
 
 	public static void main(String[] args) {
 		//Constante para guardar el precio de las entradas infantiles
-		final float ENTRADAS_NIÑOS = 15.50f;
+		final double ENTRADAS_NIÑOS = 15.50;
 		
 		//Constante para guardar el precio de las entradas de adultos
-		final float ENTRADAS_ADULTOS = 20;
+		final double ENTRADAS_ADULTOS = 20;
 		
 		//Constate para guardar el descuento
-		final float DESCUENTO = 0.95f;
+		final double DESCUENTO = 0.95;
 		
 		//Variable para guardar el valor de entradas infantiles
 		int entradasNiños;
@@ -21,7 +21,7 @@ public class Ejercicio8 {
 		int entradasAdultos;
 		
 		//Variable para guardar el precio
-		float precio;
+		double precio;
 		
 		//Scanner para leer del teclado
 		Scanner sc = new Scanner(System.in);
