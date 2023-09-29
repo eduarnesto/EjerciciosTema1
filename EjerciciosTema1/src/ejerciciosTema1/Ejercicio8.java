@@ -6,13 +6,13 @@ public class Ejercicio8 {
 
 	public static void main(String[] args) {
 		//Constante para guardar el precio de las entradas infantiles
-		final double ENTRADAS_NIÑOS = 15.50;
+		final float ENTRADAS_NIÑOS = 15.50f;
 		
 		//Constante para guardar el precio de las entradas de adultos
-		final double ENTRADAS_ADULTOS = 20;
+		final float ENTRADAS_ADULTOS = 20;
 		
 		//Constate para guardar el descuento
-		final double DESCUENTO = 0.95;
+		final float DESCUENTO = 95;
 		
 		//Variable para guardar el valor de entradas infantiles
 		int entradasNiños;
@@ -21,7 +21,7 @@ public class Ejercicio8 {
 		int entradasAdultos;
 		
 		//Variable para guardar el precio
-		double precio;
+		float precio;
 		
 		//Scanner para leer del teclado
 		Scanner sc = new Scanner(System.in);
@@ -42,7 +42,7 @@ public class Ejercicio8 {
 		precio = entradasNiños*ENTRADAS_NIÑOS+entradasAdultos*ENTRADAS_ADULTOS;
 		
 		//Verifico si tienen descuento
-		precio = precio>=100 ? precio*DESCUENTO : precio;
+		precio = precio>=100 ? DESCUENTO*precio/100 : precio;
 		
 		//Muestro el precio de las entradas
 		System.out.println("El precio total de las entradas es: " + precio + "€");
